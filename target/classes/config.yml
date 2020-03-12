@@ -1,0 +1,8 @@
+# TaberRanks Configuration File
+# Made by yours truly, not Sam.
+database:
+    ip: 'localhost'
+    port: '3306'
+    name: 'db_test'
+    username: 'root'
+    password: ''

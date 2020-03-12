@@ -1,0 +1,17 @@
+name: CadiaRanks
+author: Hellgast23, Sam Taber
+main: taber.ranks.CadiaRanks
+version: 1.3
+depend: [Vault]
+
+commands:
+    rankscore:
+        usage: /rankscore <add|take|set|check>
+        description: Add, take, set or check the score of the specified player.
+        permission: taberranks.admin
+
+permission:
+    cadairanks.admin:
+        default: op
+    cadiaranks.norankcheck:
+        default: false
