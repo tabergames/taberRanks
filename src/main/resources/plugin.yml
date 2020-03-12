@@ -6,12 +6,12 @@ depend: [Vault]
 
 commands:
     rankscore:
-        usage: /rankscore <add|take|set|check>
-        description: Add, take, set or check the score of the specified player.
+        usage: /rankscore <add|take|set|check|list>
+        description: Add, take, set, get the score list, or check the score of the specified player.
         permission: taberranks.admin
 
 permission:
-    cadairanks.admin:
+    taberranks.admin:
         default: op
-    cadiaranks.norankcheck:
+    taberranks.norankcheck:
         default: false

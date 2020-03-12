@@ -6,6 +6,7 @@ import org.bukkit.OfflinePlayer;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -60,6 +61,19 @@ public class CadiaRanks extends JavaPlugin {
                     return false;
                 }
                 if (strings.length == 2) {
+                    if(strings[0].equals("list")){
+
+                        sender.sendMessage("Rank Score List (Generated from gocadia/bravo::scorelist.sh) : ");
+                        sender.sendMessage("- Default: 1");
+                        sender.sendMessage("- Premium: 50");
+                        sender.sendMessage("- Sponsor: 100");
+                        sender.sendMessage("- VIP: 200");
+                        sender.sendMessage("- MVP: 350");
+                        sender.sendMessage("- Executive: 500");
+                        sender.sendMessage("- Legend: 800");
+                        sender.sendMessage("- GOD: 1050");
+                        sender.sendMessage("- Cadian: 2500");
+                    }
                     if (strings[0].equals("check")) {
                         OfflinePlayer ofPlayer = null;
                         try {
